@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RewiewFinder</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="topo">
+        <div class="imagem">
+          <img src="assets/icone.png" alt="" />
+
+          <h3>REWIEWFINDER</h3>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./index.html">INÍCIO</a>
+            </li>
+
+            <li>
+              <a href="./Filmes.html">FILMES</a>
+            </li>
+
+            <li>
+              <a href="./Livros.html">LIVROS</a>
+            </li>
+
+            <li>
+              <a href="./Jogos.html">JOGOS</a>
+            </li>
+
+            <li>
+              <a href="./Deixesuarewiew.html">DEIXE SUA REWIEW</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="conteudo">
+        <div class="titulo">
+          <h1>Deixe sua Rewiew</h1>
+          <br>
+          <h2>(obras que não estão no catalogo)</h2>
+        </div>
+
+        <div class="form">
+          <div class="areaInput">
+            <span>Seu Nome:</span>
+            <input
+              type="text"
+              placeholder="Nome"
+              id="nome"
+              onchange="setNome()"
+            />
+            <div class="checkbox-container">
+              <input type="checkbox" id="anonimo" name="anonimo" />
+              <label for="anonimo">Participar como anônimo</label>
+            </div>
+          </div>
+
+          <div class="areaInput">
+            <label for="opcoes">Escolha uma Categoria:</label>
+            <select id="opcoes" name="historia">
+              <option value="Jogo">Jogo</option>
+              <option value="Livro">Livro</option>
+              <option value="Filme">Filme</option>
+            </select>
+          </div>
+
+          <div class="areaInput">
+            <span>Nome da Obra:</span>
+            <input
+              type="text"
+              placeholder="Nome da Obra"
+              id="NomedaObra"
+              onchange="setNome()"
+            />
+          </div>
+
+          <div class="areaInput">
+            <span>Rewiew:</span>
+            <input
+              type="text"
+              placeholder="Rewiew"
+              id="Rewiew"
+              onchange="setNome()"
+            />
+          </div>
+
+          <button id="enviar" onclick="Enviar">Enviar</button>
+
+          <p id="mensagem">
+            Sua review será colocada em nosso site pelos admins, muito obrigado
+            pela colaboração!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>Todos os direitos reservados.</footer>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
